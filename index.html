@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News in one</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<nav id="mnav" class="navbar navbar-expand-sm sticky-top navbar-dark py-3" >
+  <img id="cflag" class="navbar-brand" src="" alt="country" onerror="this.style.display='none'">
+  <a class="navbar-brand" style="color:#888;font-family: Acme;" href="#">News in one</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <input class="form-control" type="text" placeholder="Search from over 30,000 news sources" id="search">
+  	</div>
+</nav>
+<nav id="snav" class="navbar navbar-expand bg-light" style="visibility: hidden">
+	<div id="lists" class="navbar-nav" style="display: none">
+	  <a class="nav-link" href="#" data-cat="topnews"><i class="fas fa-newspaper"></i></a>
+      <a class="nav-link" href="#" data-cat="business"><i class="fas fa-briefcase"></i></a>
+      <a class="nav-link" href="#" data-cat="entertainment"><i class="fas fa-film"></i></a>
+      <a class="nav-link" href="#" data-cat="health"><i class="fas fa-briefcase-medical"></i></a>
+      <a class="nav-link" href="#" data-cat="science"><i class="fas fa-flask"></i></a>
+      <a class="nav-link" href="#" data-cat="sports"><i class="fas fa-futbol"></i></a>
+      <a class="nav-link" href="#" data-cat="technology"><i class="fas fa-laptop"></i></a>
+  </ul>
+
+</nav>
+<div class="container-fluid" style="padding-top: 20px">
+		<div id="catarea">
+			<div id="lists" class="list-group">
+			  <a href="#" class="text-left list-group-item list-group-item-action active" data-cat="topnews"><i class="fas fa-newspaper" style="margin-left: -4px!important;"></i>Top News</a>
+			  <a href="#" class="list-group-item list-group-item-action" data-cat="business"><i class="fas fa-briefcase"></i> Business</a>
+			  <a href="#" class="list-group-item list-group-item-action" data-cat="entertainment"><i class="fas fa-film"></i> Entertainment</a>
+			  <a href="#" class="list-group-item list-group-item-action" data-cat="health"><i class="fas fa-briefcase-medical"></i> Health</a>
+			  <a href="#" class="list-group-item list-group-item-action" data-cat="science"><i class="fas fa-flask"></i> Science</a>
+			  <a href="#" class="list-group-item list-group-item-action" data-cat="sports"><i class="fas fa-futbol"></i> Sports</a>
+			  <a href="#" class="list-group-item list-group-item-action" data-cat="technology"><i class="fas fa-laptop"></i> Technology</a>
+			</div>
+
+		</div>
+		<div id="newsarea" >
+			<div id="err_alert" class="alert alert-danger text-center" role="alert" style="margin-left: 23%; margin-right:1%; visibility: hidden">
+			  <strong>Oh snap!</strong>  No Articles Found.
+			</div>
+			<div class="row" id="newsrow" style="margin-left: 23%; margin-right:1%">
+			</div>
+			<div align="center" class="cssload-fond">
+				<div class="cssload-container-general">
+						<div class="cssload-internal"><div class="cssload-ballcolor cssload-ball_1"> </div></div>
+						<div class="cssload-internal"><div class="cssload-ballcolor cssload-ball_2"> </div></div>
+						<div class="cssload-internal"><div class="cssload-ballcolor cssload-ball_3"> </div></div>
+						<div class="cssload-internal"><div class="cssload-ballcolor cssload-ball_4"> </div></div>
+				</div>
+			</div>
+		</div>
+</div>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
